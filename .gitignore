@@ -1,0 +1,9 @@
+# Compiled Java classes
+out/
+
+# The database is generated from the CSV on first run.
+# It is committed once below so graders can open it directly, but rebuilds
+# (the temp/journal files) should never be committed.
+data/movierater.db-journal
+data/*.db-wal
+data/*.db-shm

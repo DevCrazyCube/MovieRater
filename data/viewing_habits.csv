@@ -1,0 +1,204 @@
+UserID,Age,MovieID,Title,ReleaseYear,Director,Genre,MinutesWatched
+1,24,1,The Shawshank Redemption,1994,Frank Darabont,Drama,142
+1,24,3,The Dark Knight,2008,Christopher Nolan,Action,152
+1,24,8,Pulp Fiction,1994,Quentin Tarantino,Crime,154
+2,31,2,The Godfather,1972,Francis Ford Coppola,Crime,175
+2,31,5,The Matrix,1999,The Wachowskis,Sci-Fi,136
+2,31,9,Fight Club,1999,David Fincher,Drama,139
+3,19,4,Inception,2010,Christopher Nolan,Sci-Fi,148
+3,19,10,Forrest Gump,1994,Robert Zemeckis,Drama,142
+4,45,1,The Shawshank Redemption,1994,Frank Darabont,Drama,142
+4,45,2,The Godfather,1972,Francis Ford Coppola,Crime,175
+4,45,6,Interstellar,2014,Christopher Nolan,Sci-Fi,169
+5,28,3,The Dark Knight,2008,Christopher Nolan,Action,152
+5,28,7,The Lord of the Rings: The Fellowship of the Ring,2001,Peter Jackson,Fantasy,178
+6,35,5,The Matrix,1999,The Wachowskis,Sci-Fi,136
+6,35,8,Pulp Fiction,1994,Quentin Tarantino,Crime,154
+7,22,4,Inception,2010,Christopher Nolan,Sci-Fi,148
+7,22,6,Interstellar,2014,Christopher Nolan,Sci-Fi,169
+7,22,7,The Lord of the Rings: The Fellowship of the Ring,2001,Peter Jackson,Fantasy,178
+8,40,2,The Godfather,1972,Francis Ford Coppola,Crime,175
+8,40,9,Fight Club,1999,David Fincher,Drama,139
+9,29,1,The Shawshank Redemption,1994,Frank Darabont,Drama,142
+9,29,10,Forrest Gump,1994,Robert Zemeckis,Drama,142
+10,33,3,The Dark Knight,2008,Christopher Nolan,Action,152
+10,33,6,Interstellar,2014,Christopher Nolan,Sci-Fi,169
+11,26,2,The Godfather,1972,Francis Ford Coppola,Crime,175
+11,26,5,The Matrix,1999,The Wachowskis,Sci-Fi,136
+12,38,4,Inception,2010,Christopher Nolan,Sci-Fi,148
+12,38,7,The Lord of the Rings: The Fellowship of the Ring,2001,Peter Jackson,Fantasy,178
+13,30,8,Pulp Fiction,1994,Quentin Tarantino,Crime,154
+13,30,9,Fight Club,1999,David Fincher,Drama,139
+14,25,1,The Shawshank Redemption,1994,Frank Darabont,Drama,142
+14,25,10,Forrest Gump,1994,Robert Zemeckis,Drama,142
+15,42,3,The Dark Knight,2008,Christopher Nolan,Action,152
+15,42,7,The Lord of the Rings: The Fellowship of the Ring,2001,Peter Jackson,Fantasy,178
+16,27,2,The Godfather,1972,Francis Ford Coppola,Crime,175
+16,27,6,Interstellar,2014,Christopher Nolan,Sci-Fi,169
+17,36,4,Inception,2010,Christopher Nolan,Sci-Fi,148
+17,36,5,The Matrix,1999,The Wachowskis,Sci-Fi,136
+18,23,8,Pulp Fiction,1994,Quentin Tarantino,Crime,154
+18,23,9,Fight Club,1999,David Fincher,Drama,139
+19,32,1,The Shawshank Redemption,1994,Frank Darabont,Drama,142
+19,32,3,The Dark Knight,2008,Christopher Nolan,Action,152
+20,41,10,Forrest Gump,1994,Robert Zemeckis,Drama,142
+21,29,2,The Godfather,1972,Francis Ford Coppola,Crime,175
+21,29,7,The Lord of the Rings: The Fellowship of the Ring,2001,Peter Jackson,Fantasy,178
+22,34,4,Inception,2010,Christopher Nolan,Sci-Fi,148
+22,34,6,Interstellar,2014,Christopher Nolan,Sci-Fi,169
+23,26,5,The Matrix,1999,The Wachowskis,Sci-Fi,136
+23,26,8,Pulp Fiction,1994,Quentin Tarantino,Crime,154
+24,37,1,The Shawshank Redemption,1994,Frank Darabont,Drama,142
+24,37,9,Fight Club,1999,David Fincher,Drama,139
+25,21,3,The Dark Knight,2008,Christopher Nolan,Action,152
+25,21,10,Forrest Gump,1994,Robert Zemeckis,Drama,142
+26,43,2,The Godfather,1972,Francis Ford Coppola,Crime,56
+26,43,6,Interstellar,2014,Christopher Nolan,Sci-Fi,169
+27,31,4,Inception,2010,Christopher Nolan,Sci-Fi,148
+27,31,7,The Lord of the Rings: The Fellowship of the Ring,2001,Peter Jackson,Fantasy,178
+28,28,5,The Matrix,1999,The Wachowskis,Sci-Fi,136
+28,28,8,Pulp Fiction,1994,Quentin Tarantino,Crime,154
+29,39,1,The Shawshank Redemption,1994,Frank Darabont,Drama,142
+29,39,9,Fight Club,1999,David Fincher,Drama,139
+30,24,3,The Dark Knight,2008,Christopher Nolan,Action,152
+30,24,10,Forrest Gump,1994,Robert Zemeckis,Drama,142
+31,33,2,The Godfather,1972,Francis Ford Coppola,Crime,175
+31,33,6,Interstellar,2014,Christopher Nolan,Sci-Fi,85
+32,25,4,Inception,2010,Christopher Nolan,Sci-Fi,148
+32,25,7,The Lord of the Rings: The Fellowship of the Ring,2001,Peter Jackson,Fantasy,178
+33,46,5,The Matrix,1999,The Wachowskis,Sci-Fi,136
+33,46,8,Pulp Fiction,1994,Quentin Tarantino,Crime,154
+34,27,1,The Shawshank Redemption,1994,Frank Darabont,Drama,142
+34,27,9,Fight Club,1999,David Fincher,Drama,139
+35,38,3,The Dark Knight,2008,Christopher Nolan,Action,152
+35,38,10,Forrest Gump,1994,Robert Zemeckis,Drama,142
+36,22,2,The Godfather,1972,Francis Ford Coppola,Crime,175
+36,22,6,Interstellar,2014,Christopher Nolan,Sci-Fi,169
+37,31,4,Inception,2010,Christopher Nolan,Sci-Fi,148
+37,31,7,The Lord of the Rings: The Fellowship of the Ring,2001,Peter Jackson,Fantasy,178
+38,40,1,The Shawshank Redemption,1994,Frank Darabont,Drama,142
+38,40,5,The Matrix,1999,The Wachowskis,Sci-Fi,136
+39,29,8,Pulp Fiction,1994,Quentin Tarantino,Crime,154
+39,29,9,Fight Club,1999,David Fincher,Drama,139
+40,35,3,The Dark Knight,2008,Christopher Nolan,Action,152
+40,35,10,Forrest Gump,1994,Robert Zemeckis,Drama,72
+41,44,2,The Godfather,1972,Francis Ford Coppola,Crime,175
+41,44,6,Interstellar,2014,Christopher Nolan,Sci-Fi,169
+42,26,1,The Shawshank Redemption,1994,Frank Darabont,Drama,142
+42,26,4,Inception,2010,Christopher Nolan,Sci-Fi,148
+43,33,5,The Matrix,1999,The Wachowskis,Sci-Fi,136
+43,33,7,The Lord of the Rings: The Fellowship of the Ring,2001,Peter Jackson,Fantasy,178
+44,21,8,Pulp Fiction,1994,Quentin Tarantino,Crime,154
+44,21,9,Fight Club,1999,David Fincher,Drama,139
+45,37,3,The Dark Knight,2008,Christopher Nolan,Action,152
+45,37,10,Forrest Gump,1994,Robert Zemeckis,Drama,142
+46,28,1,The Shawshank Redemption,1994,Frank Darabont,Drama,142
+46,28,6,Interstellar,2014,Christopher Nolan,Sci-Fi,169
+47,42,2,The Godfather,1972,Francis Ford Coppola,Crime,175
+47,42,4,Inception,2010,Christopher Nolan,Sci-Fi,148
+48,30,5,The Matrix,1999,The Wachowskis,Sci-Fi,136
+48,30,7,The Lord of the Rings: The Fellowship of the Ring,2001,Peter Jackson,Fantasy,178
+49,23,8,Pulp Fiction,1994,Quentin Tarantino,Crime,154
+49,23,9,Fight Club,1999,David Fincher,Drama,139
+50,36,1,The Shawshank Redemption,1994,Frank Darabont,Drama,142
+50,36,3,The Dark Knight,2008,Christopher Nolan,Action,152
+51,27,10,Forrest Gump,1994,Robert Zemeckis,Drama,142
+51,27,2,The Godfather,1972,Francis Ford Coppola,Crime,175
+52,39,6,Interstellar,2014,Christopher Nolan,Sci-Fi,169
+52,39,4,Inception,2010,Christopher Nolan,Sci-Fi,148
+53,24,7,The Lord of the Rings: The Fellowship of the Ring,2001,Peter Jackson,Fantasy,178
+53,24,5,The Matrix,1999,The Wachowskis,Sci-Fi,136
+54,32,1,The Shawshank Redemption,1994,Frank Darabont,Drama,142
+54,32,8,Pulp Fiction,1994,Quentin Tarantino,Crime,154
+55,41,9,Fight Club,1999,David Fincher,Drama,139
+55,41,3,The Dark Knight,2008,Christopher Nolan,Action,152
+56,34,10,Forrest Gump,1994,Robert Zemeckis,Drama,142
+56,34,2,The Godfather,1972,Francis Ford Coppola,Crime,175
+57,25,6,Interstellar,2014,Christopher Nolan,Sci-Fi,169
+57,25,4,Inception,2010,Christopher Nolan,Sci-Fi,148
+58,38,5,The Matrix,1999,The Wachowskis,Sci-Fi,136
+58,38,7,The Lord of the Rings: The Fellowship of the Ring,2001,Peter Jackson,Fantasy,120
+59,29,1,The Shawshank Redemption,1994,Frank Darabont,Drama,142
+59,29,8,Pulp Fiction,1994,Quentin Tarantino,Crime,154
+60,45,9,Fight Club,1999,David Fincher,Drama,139
+60,45,3,The Dark Knight,2008,Christopher Nolan,Action,152
+61,26,2,The Godfather,1972,Francis Ford Coppola,Crime,175
+61,26,10,Forrest Gump,1994,Robert Zemeckis,Drama,142
+62,33,4,Inception,2010,Christopher Nolan,Sci-Fi,148
+62,33,6,Interstellar,2014,Christopher Nolan,Sci-Fi,169
+63,22,5,The Matrix,1999,The Wachowskis,Sci-Fi,136
+63,22,7,The Lord of the Rings: The Fellowship of the Ring,2001,Peter Jackson,Fantasy,178
+64,37,8,Pulp Fiction,1994,Quentin Tarantino,Crime,154
+64,37,1,The Shawshank Redemption,1994,Frank Darabont,Drama,142
+65,30,9,Fight Club,1999,David Fincher,Drama,139
+65,30,3,The Dark Knight,2008,Christopher Nolan,Action,152
+66,44,2,The Godfather,1972,Francis Ford Coppola,Crime,175
+66,44,10,Forrest Gump,1994,Robert Zemeckis,Drama,142
+67,27,4,Inception,2010,Christopher Nolan,Sci-Fi,148
+67,27,6,Interstellar,2014,Christopher Nolan,Sci-Fi,169
+68,35,7,The Lord of the Rings: The Fellowship of the Ring,2001,Peter Jackson,Fantasy,178
+68,35,5,The Matrix,1999,The Wachowskis,Sci-Fi,136
+69,20,8,Pulp Fiction,1994,Quentin Tarantino,Crime,154
+69,20,1,The Shawshank Redemption,1994,Frank Darabont,Drama,142
+70,40,3,The Dark Knight,2008,Christopher Nolan,Action,152
+70,40,9,Fight Club,1999,David Fincher,Drama,139
+71,31,10,Forrest Gump,1994,Robert Zemeckis,Drama,142
+71,31,2,The Godfather,1972,Francis Ford Coppola,Crime,175
+72,43,6,Interstellar,2014,Christopher Nolan,Sci-Fi,169
+72,43,4,Inception,2010,Christopher Nolan,Sci-Fi,148
+73,28,5,The Matrix,1999,The Wachowskis,Sci-Fi,136
+73,28,7,The Lord of the Rings: The Fellowship of the Ring,2001,Peter Jackson,Fantasy,178
+74,36,1,The Shawshank Redemption,1994,Frank Darabont,Drama,142
+74,36,8,Pulp Fiction,1994,Quentin Tarantino,Crime,154
+75,23,9,Fight Club,1999,David Fincher,Drama,139
+75,23,3,The Dark Knight,2008,Christopher Nolan,Action,152
+76,39,2,The Godfather,1972,Francis Ford Coppola,Crime,175
+76,39,10,Forrest Gump,1994,Robert Zemeckis,Drama,142
+77,32,4,Inception,2010,Christopher Nolan,Sci-Fi,148
+77,32,6,Interstellar,2014,Christopher Nolan,Sci-Fi,169
+78,46,7,The Lord of the Rings: The Fellowship of the Ring,2001,Peter Jackson,Fantasy,178
+78,46,5,The Matrix,1999,The Wachowskis,Sci-Fi,136
+79,25,8,Pulp Fiction,1994,Quentin Tarantino,Crime,154
+79,25,1,The Shawshank Redemption,1994,Frank Darabont,Drama,142
+80,37,3,The Dark Knight,2008,Christopher Nolan,Action,152
+80,37,9,Fight Club,1999,David Fincher,Drama,139
+81,29,10,Forrest Gump,1994,Robert Zemeckis,Drama,142
+81,29,2,The Godfather,1972,Francis Ford Coppola,Crime,175
+82,41,4,Inception,2010,Christopher Nolan,Sci-Fi,148
+82,41,6,Interstellar,2014,Christopher Nolan,Sci-Fi,169
+83,33,5,The Matrix,1999,The Wachowskis,Sci-Fi,136
+83,33,7,The Lord of the Rings: The Fellowship of the Ring,2001,Peter Jackson,Fantasy,178
+84,22,1,The Shawshank Redemption,1994,Frank Darabont,Drama,142
+84,22,8,Pulp Fiction,1994,Quentin Tarantino,Crime,154
+85,38,9,Fight Club,1999,David Fincher,Drama,139
+85,38,3,The Dark Knight,2008,Christopher Nolan,Action,152
+86,27,2,The Godfather,1972,Francis Ford Coppola,Crime,175
+86,27,10,Forrest Gump,1994,Robert Zemeckis,Drama,142
+87,44,6,Interstellar,2014,Christopher Nolan,Sci-Fi,169
+87,44,4,Inception,2010,Christopher Nolan,Sci-Fi,148
+88,30,5,The Matrix,1999,The Wachowskis,Sci-Fi,136
+88,30,7,The Lord of the Rings: The Fellowship of the Ring,2001,Peter Jackson,Fantasy,178
+89,24,8,Pulp Fiction,1994,Quentin Tarantino,Crime,154
+89,24,1,The Shawshank Redemption,1994,Frank Darabont,Drama,90
+90,36,3,The Dark Knight,2008,Christopher Nolan,Action,152
+90,36,9,Fight Club,1999,David Fincher,Drama,139
+91,28,10,Forrest Gump,1994,Robert Zemeckis,Drama,142
+91,28,2,The Godfather,1972,Francis Ford Coppola,Crime,175
+92,42,4,Inception,2010,Christopher Nolan,Sci-Fi,148
+92,42,6,Interstellar,2014,Christopher Nolan,Sci-Fi,169
+93,34,7,The Lord of the Rings: The Fellowship of the Ring,2001,Peter Jackson,Fantasy,178
+93,34,5,The Matrix,1999,The Wachowskis,Sci-Fi,136
+94,25,1,The Shawshank Redemption,1994,Frank Darabont,Drama,142
+94,25,8,Pulp Fiction,1994,Quentin Tarantino,Crime,154
+95,39,9,Fight Club,1999,David Fincher,Drama,139
+95,39,3,The Dark Knight,2008,Christopher Nolan,Action,152
+96,31,2,The Godfather,1972,Francis Ford Coppola,Crime,175
+96,31,10,Forrest Gump,1994,Robert Zemeckis,Drama,142
+97,45,6,Interstellar,2014,Christopher Nolan,Sci-Fi,169
+97,45,4,Inception,2010,Christopher Nolan,Sci-Fi,148
+98,29,5,The Matrix,1999,The Wachowskis,Sci-Fi,136
+98,29,7,The Lord of the Rings: The Fellowship of the Ring,2001,Peter Jackson,Fantasy,178
+99,20,1,The Shawshank Redemption,1994,Frank Darabont,Drama,142
+99,20,8,Pulp Fiction,1994,Quentin Tarantino,Crime,154
+100,37,3,The Dark Knight,2008,Christopher Nolan,Action,152
+100,37,9,Fight Club,1999,David Fincher,Drama,139
