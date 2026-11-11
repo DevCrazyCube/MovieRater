@@ -1,7 +1,23 @@
 # MovieRater
 
+![Java 17+](https://img.shields.io/badge/Java-17%2B-b07219) ![SQLite via JDBC](https://img.shields.io/badge/SQLite-JDBC-003b57) ![No build tool](https://img.shields.io/badge/build-javac%20only-555) ![Tests: 22](https://img.shields.io/badge/tests-22%20end--to--end-2ea44f)
+
 A small command-line application that lets **MovieRater** manage its viewing-habit
-data. Written in **Java** using **JDBC** on top of a **SQLite** database.
+data. Written in **Java** using **JDBC** on top of a **SQLite** database. A school
+assignment on database design: a flat CSV goes in, three normalised tables come out,
+and every number the menu shows is worked out in SQL.
+
+```
+$ ./run.sh
+=== Welcome to MovieRater ===
+Choose an option: 5
+
+The mean age of all users is 32.26 years.
+
+Choose an option: 8
+
+99 user(s) have watched more than one movie.
+```
 
 The program reads the supplied dataset (`data/viewing_habits.csv`), stores it in a
 SQLite database according to the Entity Relationship Diagram, and offers a menu
@@ -14,14 +30,26 @@ in **SQL**, not in Java.
 
 The flat CSV is normalised into the three tables from the assignment:
 
-```
-User                    ViewingHabit                 Movie
-----------------        ------------------           ----------------
-UserID  (PK)  ----<     UserID  (FK)                 MovieID (PK)
-Age                     MovieID (FK)      >----      Title
-                        MinutesWatched               ReleaseYear
-                                                     Director
-                                                     Genre
+```mermaid
+erDiagram
+    User ||--o{ ViewingHabit : "watches"
+    Movie ||--o{ ViewingHabit : "is watched in"
+    User {
+        INTEGER UserID PK
+        INTEGER Age
+    }
+    ViewingHabit {
+        INTEGER UserID FK
+        INTEGER MovieID FK
+        INTEGER MinutesWatched
+    }
+    Movie {
+        INTEGER MovieID PK
+        TEXT Title
+        INTEGER ReleaseYear
+        TEXT Director
+        TEXT Genre
+    }
 ```
 
 - `User` and `Movie` hold each entity once.
@@ -34,8 +62,7 @@ The schema lives in [`src/schema.sql`](src/schema.sql).
 
 ## Design rationale
 
-This section explains *why* the application is built the way it is — useful for
-the oral defense.
+Why the application is built the way it is.
 
 ### Why normalise the CSV into three tables?
 The supplied CSV is **flat (denormalised)**: every row repeats the user's age and
@@ -141,6 +168,8 @@ When the program starts you get this menu:
 | 0 | Exit | |
 
 Each option prompts for any input it needs (for example a UserID or MovieID).
+A word where a number is asked is asked again; an age outside 0–130 or an empty
+title is refused; closing the input (Ctrl+D) ends the program.
 
 ### Example session
 
@@ -161,6 +190,22 @@ Choose an option: 8
 
 ---
 
+## Tests
+
+```bash
+./test.sh         # 22 passed, 0 failed
+```
+
+`test.sh` builds the app in a temporary copy, types scripted input into the menu and
+checks what it prints: the four numbers above, every menu option, wrong input, closed
+input, and that a rebuild puts the data back. The repository's own database is not
+touched.
+
+Not tested: Windows (the commands above are given, not run), and Java versions other
+than 21.
+
+---
+
 ## Project structure
 
 ```
@@ -176,5 +221,16 @@ MovieRater/
 │   └── sqlite-jdbc.jar     # SQLite JDBC driver (+ slf4j)
 ├── compile.sh
 ├── run.sh
+├── test.sh                 # end-to-end test of the menu
 └── README.md
 ```
+
+---
+
+## Data and licences
+
+- `data/viewing_habits.csv` is the synthetic dataset supplied with the assignment
+  (203 rows; ids and ages, no names).
+- `lib/` holds the SQLite JDBC driver and slf4j, each under its own licence.
+- The test script and the input checks were added by directing an AI coding agent
+  (Claude Code).

@@ -39,25 +39,46 @@ public class MovieRaterApp {
         boolean running = true;
         while (running) {
             printMenu();
-            String choice = in.nextLine().trim();
-            System.out.println();
-            switch (choice) {
-                case "1"  -> addUser();
-                case "2"  -> showViewingHabitsForUser();
-                case "3"  -> changeMovieTitle();
-                case "4"  -> deleteViewingHabit();
-                case "5"  -> showMeanAge();
-                case "6"  -> showUserCountForMovie();
-                case "7"  -> showTotalMinutesWatched();
-                case "8"  -> showUsersWithMoreThanOneMovie();
-                case "9"  -> addEmailColumn();
-                case "0"  -> running = false;
-                case "r"  -> rebuildDatabase();
-                default   -> System.out.println("Unknown option, please try again.");
+            try {
+                running = handle(readLine());
+            } catch (EndOfInput e) {
+                // Input closed (Ctrl+D, or a script ran out of lines): stop cleanly.
+                System.out.println();
+                running = false;
             }
             System.out.println();
         }
         System.out.println("Goodbye!");
+    }
+
+    /** Runs one menu choice. Returns false when the user chose to exit. */
+    private boolean handle(String choice) throws Exception {
+        boolean running = true;
+        System.out.println();
+        switch (choice) {
+            case "1"  -> addUser();
+            case "2"  -> showViewingHabitsForUser();
+            case "3"  -> changeMovieTitle();
+            case "4"  -> deleteViewingHabit();
+            case "5"  -> showMeanAge();
+            case "6"  -> showUserCountForMovie();
+            case "7"  -> showTotalMinutesWatched();
+            case "8"  -> showUsersWithMoreThanOneMovie();
+            case "9"  -> addEmailColumn();
+            case "0"  -> running = false;
+            case "r"  -> rebuildDatabase();
+            default   -> System.out.println("Unknown option, please try again.");
+        }
+        return running;
+    }
+
+    /** Thrown when there is no more input to read. */
+    private static final class EndOfInput extends RuntimeException { }
+
+    /** Reads one trimmed line; throws EndOfInput when the input is closed. */
+    private String readLine() {
+        if (!in.hasNextLine()) throw new EndOfInput();
+        return in.nextLine().trim();
     }
 
     /** Builds the database from the CSV the first time the app is run. */
@@ -98,6 +119,10 @@ public class MovieRaterApp {
     // ---------------------------------------------------------------------
     private void addUser() {
         int age = askInt("Enter the age of the new user: ");
+        if (age < 0 || age > 130) {
+            System.out.println("An age must be between 0 and 130. No user added.");
+            return;
+        }
         String sql = "INSERT INTO User(Age) VALUES (?)";
         try (Connection conn = db.connect();
              PreparedStatement ps = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)) {
@@ -150,7 +175,11 @@ public class MovieRaterApp {
     private void changeMovieTitle() {
         int movieId = askInt("Enter the MovieID to rename: ");
         System.out.print("Enter the new title: ");
-        String newTitle = in.nextLine().trim();
+        String newTitle = readLine();
+        if (newTitle.isEmpty()) {
+            System.out.println("A title cannot be empty. Nothing changed.");
+            return;
+        }
         String sql = "UPDATE Movie SET Title = ? WHERE MovieID = ?";
         try (Connection conn = db.connect();
              PreparedStatement ps = conn.prepareStatement(sql)) {
@@ -307,7 +336,7 @@ public class MovieRaterApp {
     private int askInt(String prompt) {
         while (true) {
             System.out.print(prompt);
-            String line = in.nextLine().trim();
+            String line = readLine();
             try {
                 return Integer.parseInt(line);
             } catch (NumberFormatException e) {
